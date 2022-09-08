@@ -49,11 +49,6 @@ a {
   height: 100%;
   /*Imagen y texto - 1 card*/
   /*Imagen y texto - 2 card*/ }
-  .container_index .Section1 {
-    grid-area: Section1;
-    background-color: #b17f00;
-    padding: 10px;
-    margin: 10px; }
   .container_index .Section2 {
     grid-area: Section2;
     background-color: #d9d9d9;
@@ -115,6 +110,109 @@ a {
         .container_index .Section4 div img:hover {
           transform: scale(1.3); }
 
+.container_registro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33.32vh 11vh auto 11vh;
+  grid-template-areas: "header header header header" "Section1 Section1 Section1 Section1" "Section2_r Section2_r Section2_r Section2_r" "Footer Footer Footer Footer";
+  width: 100%;
+  height: 100%; }
+  .container_registro .Section2_r {
+    grid-area: Section2_r;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin-bottom: 10px;
+    align-items: center; }
+    .container_registro .Section2_r table {
+      border-collapse: collapse;
+      font-size: x-small; }
+      .container_registro .Section2_r table tr:nth-child(even) {
+        background-color: #f2f2f2; }
+      .container_registro .Section2_r table tr:hover {
+        background-color: #ddd; }
+      .container_registro .Section2_r table tr th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white; }
+
+.container_software_proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33.32vh 11vh auto auto auto auto 11vh;
+  grid-template-areas: "header header header header" "Section1 Section1 Section1 Section1" "Section2_syp Section2_syp Section2_syp Section2_syp" "Section3_syp Section3_syp Section3_syp Section3_syp" "Section4_syp Section4_syp Section4_syp Section4_syp" "Section5_syp Section5_syp Section5_syp Section5_syp" "Footer Footer Footer Footer";
+  width: 100%;
+  height: 100%; }
+  .container_software_proyectos .Section2_syp {
+    grid-area: Section2_syp;
+    margin: 0px 25px 0px 25px;
+    padding: 5px;
+    background-color: #fd8c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .container_software_proyectos .Section3_syp {
+    grid-area: Section3_syp; }
+    .container_software_proyectos .Section3_syp div {
+      background-color: #fde000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5px; }
+      .container_software_proyectos .Section3_syp div img {
+        margin-left: 5px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 100% 10%; }
+      .container_software_proyectos .Section3_syp div div {
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .container_software_proyectos .Section3_syp div div a p {
+          background-color: #efc75f;
+          padding: 5px 10px 5px 10px;
+          margin-top: 5px; }
+  .container_software_proyectos .Section4_syp {
+    grid-area: Section4_syp;
+    margin: 0px 25px 0px 25px;
+    padding: 5px;
+    background-color: #fd8c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .container_software_proyectos .Section5_syp {
+    grid-area: Section5_syp; }
+    .container_software_proyectos .Section5_syp div {
+      background-color: #fde000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5px; }
+      .container_software_proyectos .Section5_syp div img {
+        margin-left: 5px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 100% 10%; }
+      .container_software_proyectos .Section5_syp div div {
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .container_software_proyectos .Section5_syp div div a p {
+          background-color: #efc75f;
+          padding: 5px 10px 5px 10px;
+          margin-top: 5px; }
+
 /*FOOTER*/
 .Footer {
   grid-area: Footer;
@@ -162,7 +260,10 @@ a {
     object-fit: cover;
     object-position: 40% 10%; }
   .container_index .Section4 div div p {
-    line-height: 40px; } }
+    line-height: 40px; }
+  /*REGISTRO*/
+  .container_registro .Section2_r table {
+    font-size: medium; } }
 
 /*Dispositivos grandes*/
 @media (min-width: 1024px) {
@@ -193,4 +294,18 @@ a {
         padding: 5px;
         line-height: 50px; }
       .container_index .Section4 div img div ul {
-        line-height: 40px; } }
+        line-height: 40px; }
+  /*REGISTRO*/
+  .container_registro .Section2_r table {
+    width: 1024px; } }
+
+.container_registro .Section2_r table tr td, .container_registro .Section2_r table tr th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 5%; }
+
+.container_index .Section1, .container_registro .Section1, .container_software_proyectos .Section1 {
+  grid-area: Section1;
+  background-color: #b17f00;
+  padding: 10px;
+  margin: 10px; }

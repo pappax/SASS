@@ -21,39 +21,49 @@
       }
     }
   }
-  .container_index{
-  .Section2 {
-    div {
-      img {
-        margin-left: 5px;
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        object-position: 70% 10%;
-      }
-      p {
-        line-height: 40px;
-      }
-    }
-  }
 
-  .Section4 {
-    div {
-      img {
-        margin-left: 5px;
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        object-position: 40% 10%;
-      }
+  .container_index {
+    .Section2 {
       div {
+        img {
+          margin-left: 5px;
+          width: 400px;
+          height: 400px;
+          object-fit: cover;
+          object-position: 70% 10%;
+        }
         p {
           line-height: 40px;
         }
       }
     }
+
+    .Section4 {
+      div {
+        img {
+          margin-left: 5px;
+          width: 400px;
+          height: 400px;
+          object-fit: cover;
+          object-position: 40% 10%;
+        }
+        div {
+          p {
+            line-height: 40px;
+          }
+        }
+      }
+    }
   }
-}
+  /*REGISTRO*/
+  .container_registro {
+    .Section2_r {
+      table {
+        font-size: medium;
+      }
+    }
+  }
+
 }
 
 /*Dispositivos grandes*/
@@ -114,6 +124,15 @@
             }
           }
         }
+      }
+    }
+  }
+
+  /*REGISTRO*/
+  .container_registro {
+    .Section2_r {
+      table {
+        width: 1024px;
       }
     }
   }
